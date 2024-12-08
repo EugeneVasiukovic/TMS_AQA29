@@ -8,24 +8,24 @@ d) Минимальный элемент
  */
 public class HomeWorkFourTaskTwo {
     public static void main(String[] args) {
-        int[] Integermassiv ={8,5,6,8,10,12,3,45,76,87,2,83,57,8,9};
+        int[] integermassiv ={8,5,6,8,10,12,3,45,76,87,2,83,57,8,9};
         int result = 0;
-        int ElementMassivMax = Integermassiv[0];
-        int ElementMassivMin = Integermassiv[0];
-        for (int i : Integermassiv) {
+        int elementMassivMax = integermassiv[0];
+        int elementMassivMin = integermassiv[0];
+        for (int i : integermassiv) {
             result += i;
-            if (ElementMassivMax < i) {
-                ElementMassivMax = i;
+            if (elementMassivMax < i) {
+                elementMassivMax = i;
             }
-            if (ElementMassivMin > i) {
-                ElementMassivMin = i;
+            if (elementMassivMin > i) {
+                elementMassivMin = i;
             }
 
         }
-        System.out.println("Number of array element " + Integermassiv.length);
+        System.out.println("Number of array element " + integermassiv.length);
         System.out.println("Sum of all elements " + result);
-        System.out.println("Max element massiv " + ElementMassivMax);
-        System.out.println("Min element massiv " + ElementMassivMin);
+        System.out.println("Max element massiv " + elementMassivMax);
+        System.out.println("Min element massiv " + elementMassivMin);
 
     }
 }
