@@ -43,3 +43,12 @@ bin/
 
 
 /.idea/*
+/src/main/java/com/tms/lesson2/mainApp.java
+/gradle/
+/build/
+/.gradle/
+/.idea/
+/build.gradle
+/gradlew
+/gradlew.bat
+/settings.gradle
