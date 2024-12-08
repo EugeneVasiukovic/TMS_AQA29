@@ -17,7 +17,7 @@ public class HomeWork1 {
         System.out.println(result);
 
         double v3 = 45.32364;
-        float v4 = 11.23f;
+        float v4 = 12.23f;
 
         double result1 = v3 % v4;
 
