@@ -14,12 +14,12 @@ public class TaskThreeHomeWorkTwo {
         for (int i = 1; i <= 10; i++ ){
             Scanner assessment = new Scanner(System.in);
             System.out.println("Enter your rating: ");
-            float ValueAssessment= assessment.nextFloat();
-            saveValueAssessment += ValueAssessment;
-            float AverageRetings = saveValueAssessment / i;
+            float valueAssessment= assessment.nextFloat();
+            saveValueAssessment += valueAssessment;
+            float averageRetings = saveValueAssessment / i;
             int CountRatings = 10- i;
             System.out.println("How many ratings were entered?\n " +i);
-            System.out.println("Output of the average arephmitic\n" + AverageRetings);
+            System.out.println("Output of the average arephmitic\n" + averageRetings);
             System.out.println("How many ratings are left to enter?\n" + CountRatings);
 
 
