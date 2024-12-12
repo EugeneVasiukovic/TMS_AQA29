@@ -39,14 +39,12 @@ public class Student {
 
     }
 
-    public String returnNameLastName() {
+    public String getFullName() {
         String nameLastNameStudent = "Name student: " + name + "\nLast name student: " + lastName;
         return nameLastNameStudent;
 
     }
-    public void CountingActivities(String studentlastName, int CountOflecture){
-        lastName = studentlastName;
-        this.countOflecture = CountOflecture;
-        System.out.println("Last name: " + studentlastName + "\nNumber of classes attended: " + CountOflecture);
+    public void printLectureCount(String lastName, int countOflecture) {
+        System.out.println(lastName + " Attend   " + countOflecture + " lessons");
     }
 }

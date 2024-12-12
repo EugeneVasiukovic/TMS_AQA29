@@ -7,26 +7,29 @@ package by.tms.homeworkfive;
 Снова выведите информацию об этом студенте.
  */
 
+import java.util.Arrays;
+
 public class CreateStudent {
     public static void main(String[] args) {
         Student student= new Student();
         Student studentEugene = new Student("Eugene", "Vasiukovich");
         Student studentAnna = new Student("Anna", "Ivanova",22);
         Student studentVika = new Student("Vika", "Petrova", 28, 5);
-        String studentlistEugene = studentEugene.returnNameLastName();
-        String studentListAnna = studentAnna.returnNameLastName();
-        String studentListVika = studentVika.returnNameLastName();
+        String studentlistEugene = studentEugene.getFullName();
+        String studentListAnna = studentAnna.getFullName();
+        String studentListVika = studentVika.getFullName();
 
 
         System.out.println(studentlistEugene);
         System.out.println(studentListAnna);
         System.out.println(studentListVika);
 
-        student.CountingActivities(studentEugene.lastName, 20);
-        student.CountingActivities(studentAnna.lastName,85);
-        student.CountingActivities(studentVika.lastName, 30);
+        student.printLectureCount(studentEugene.lastName, 20);
+        student.printLectureCount(studentVika.lastName, studentVika.countOflecture);
+        student.printLectureCount(studentAnna.lastName,85);
 
-        student.CountingActivities(studentAnna.lastName,150);
+        student.printLectureCount(studentVika.lastName,150);
+
 
 
 
