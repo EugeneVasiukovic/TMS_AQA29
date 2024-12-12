@@ -26,6 +26,8 @@ public class CreateStudent {
         student.CountingActivities(studentAnna.lastName,85);
         student.CountingActivities(studentVika.lastName, 30);
 
+        student.CountingActivities(studentAnna.lastName,150);
+
 
 
     }

@@ -44,8 +44,9 @@ public class Student {
         return nameLastNameStudent;
 
     }
-    public void CountingActivities(String Student, int CountOflecture){
+    public void CountingActivities(String studentlastName, int CountOflecture){
+        lastName = studentlastName;
         this.countOflecture = CountOflecture;
-        System.out.println("Last name: " + Student + " Number of classes attended: " + CountOflecture);
+        System.out.println("Last name: " + studentlastName + "\nNumber of classes attended: " + CountOflecture);
     }
 }
