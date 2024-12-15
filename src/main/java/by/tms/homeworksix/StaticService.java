@@ -4,9 +4,9 @@ package by.tms.homeworksix;
 Вызвать данный метод необходимо через имя класса, без создания объекта.
  */
 public class StaticService {
-    public static void stringIsInt(int i){
+    public static void stringIsInt(int i, String printStr){
         for (int j = 0 ; j <= i; j++){
-            System.out.println("Hello Word");
+            System.out.println(printStr);
         }
     }
 

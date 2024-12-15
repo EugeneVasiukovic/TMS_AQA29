@@ -37,8 +37,11 @@ public class MainAppCreateProduct {
         };
 
         ServiceProduct serviceProduct = new ServiceProduct();
-        serviceProduct.printTypeProductOfTheAveregeCost(productList,TypeProduct.MOBILE);
-        serviceProduct.printCoutProductIsAvailability(productList,TypeProduct.TV);
-        StaticService.stringIsInt(8);
+        int totalCostProductType = serviceProduct.printTypeProductOfTheAveregeCost(productList,TypeProduct.MOBILE);
+        int numberProductStock = serviceProduct.printCoutProductIsAvailability(productList,TypeProduct.TV);
+
+        System.out.println("The cost of all products of the specified type\n" + totalCostProductType);
+        System.out.println("The number of products that are in stock\n" + numberProductStock);
+        StaticService.stringIsInt(8,"123 compucter");
     }
 }
