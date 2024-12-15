@@ -27,11 +27,7 @@ public class CreateStudent {
         student.printLectureCount(studentEugene.lastName, 20);
         student.printLectureCount(studentVika.lastName, studentVika.countOflecture);
         student.printLectureCount(studentAnna.lastName,85);
-
         student.printLectureCount(studentVika.lastName,150);
-
-
-
-
-    }
+            }
 }
+
