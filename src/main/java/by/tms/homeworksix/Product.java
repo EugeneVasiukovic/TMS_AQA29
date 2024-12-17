@@ -16,7 +16,7 @@ public class Product {
         this.nameOfTheProduct = nameOfTheProduct;
         this.availability = availability;
         this.typeProduct = typeProduct;
-        costOfTheProduct = typeProduct.getCoast();
+        costOfTheProduct = typeProduct.getCost();
     }
 
     public int getCostOfTheProduct() {

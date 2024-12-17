@@ -11,7 +11,7 @@ public enum TypeProduct {
         this.cost =cost;
     }
 
-    public int getCoast(){
+    public int getCost(){
         return cost;
     }
 }
