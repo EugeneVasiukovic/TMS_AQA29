@@ -5,13 +5,13 @@ public enum TypeProduct {
     TV(1100),
     AUDIO(450);
 
-    private  int coast;
+    private  int cost;
 
-    TypeProduct(int coast){
-        this.coast =coast;
+    TypeProduct(int cost){
+        this.cost =cost;
     }
 
     public int getCoast(){
-        return coast;
+        return cost;
     }
 }
