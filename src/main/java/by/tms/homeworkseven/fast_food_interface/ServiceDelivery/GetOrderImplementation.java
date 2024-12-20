@@ -27,7 +27,7 @@ public class GetOrderImplementation implements GetOrder {
     }
 
 
-    public void checkMethodGetOrder() {
+    public void createGetOrder() {
         if (validator.validateMethodGetOrder(methodOrderGet)) {
             acceptOrder(methodOrderGet);
             orderToDataBase.saveOrderDataBase(methodOrderGet);
