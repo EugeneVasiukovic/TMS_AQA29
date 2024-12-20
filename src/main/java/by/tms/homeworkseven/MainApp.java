@@ -15,10 +15,10 @@ public class MainApp {
                 new GetOrderImplementation("Other", new DeliveryProcessOrderImplementation());
 
         System.out.println("Mock order one: ");
-        orderOne.createGetOrder();
+        orderOne.createOrder();
         System.out.println("Mock order two: ");
-        orderTwo.createGetOrder();
+        orderTwo.createOrder();
         System.out.println("Mock order three: ");
-        orderThree.createGetOrder();
+        orderThree.createOrder();
     }
 }
