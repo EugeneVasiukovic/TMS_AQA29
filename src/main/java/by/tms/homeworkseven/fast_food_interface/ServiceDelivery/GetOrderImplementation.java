@@ -5,11 +5,7 @@ import by.tms.homeworkseven.fast_food_interface.GetOrder;
 import by.tms.homeworkseven.fast_food_interface.ManageOrder;
 import by.tms.homeworkseven.fast_food_interface.SaveOrderToDataBase;
 
-/*
-1) Создаем интерфейс для получения заказа
-1.1) Необходима реализация, которая принимает заказ онлайн
-1.2) Необходима реализация, которая принимает по телефону
- */
+
 public class GetOrderImplementation implements GetOrder {
 
     private String methodOrderGet;
