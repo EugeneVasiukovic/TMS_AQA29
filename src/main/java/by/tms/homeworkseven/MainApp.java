@@ -1,8 +1,8 @@
 package by.tms.homeworkseven;
 
-import by.tms.homeworkseven.fast_food_interface.DeliveryProcessOrder;
-import by.tms.homeworkseven.fast_food_interface.ServiceDelivery.DeliveryProcessOrderImplementation;
-import by.tms.homeworkseven.fast_food_interface.ServiceDelivery.GetOrderImplementation;
+import by.tms.homeworkseven.fastfoodinterface.DeliveryProcessOrder;
+import by.tms.homeworkseven.fastfoodinterface.ServiceDelivery.DeliveryProcessOrderImplementation;
+import by.tms.homeworkseven.fastfoodinterface.ServiceDelivery.GetOrderImplementation;
 
 public class MainApp {
     public static void main(String[] args) {

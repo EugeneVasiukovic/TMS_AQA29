@@ -1,4 +1,4 @@
-package by.tms.homeworkseven.fast_food_interface;
+package by.tms.homeworkseven.fastfoodinterface;
 
 public interface DeliveryProcessOrder {
     default void deliveryProcessOrder(String orderDetails){

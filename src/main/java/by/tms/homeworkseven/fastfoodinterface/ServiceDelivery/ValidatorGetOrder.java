@@ -1,4 +1,4 @@
-package by.tms.homeworkseven.fast_food_interface.ServiceDelivery;
+package by.tms.homeworkseven.fastfoodinterface.ServiceDelivery;
 
 public class ValidatorGetOrder {
     public boolean validateMethodGetOrder(String method) {

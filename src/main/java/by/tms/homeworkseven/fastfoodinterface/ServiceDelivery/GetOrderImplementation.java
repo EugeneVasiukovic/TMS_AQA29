@@ -1,16 +1,16 @@
-package by.tms.homeworkseven.fast_food_interface.ServiceDelivery;
+package by.tms.homeworkseven.fastfoodinterface.ServiceDelivery;
 
-import by.tms.homeworkseven.fast_food_interface.DeliveryProcessOrder;
-import by.tms.homeworkseven.fast_food_interface.GetOrder;
-import by.tms.homeworkseven.fast_food_interface.ManageOrder;
-import by.tms.homeworkseven.fast_food_interface.SaveOrderToDataBase;
+import by.tms.homeworkseven.fastfoodinterface.DeliveryProcessOrder;
+import by.tms.homeworkseven.fastfoodinterface.GetOrder;
+import by.tms.homeworkseven.fastfoodinterface.ManageOrder;
+import by.tms.homeworkseven.fastfoodinterface.SaveOrder;
 
 
 public class GetOrderImplementation implements GetOrder {
 
     private String methodOrderGet;
     private ValidatorGetOrder validator;
-    private SaveOrderToDataBase orderToDataBase;
+    private SaveOrder orderToDataBase;
     private ManageOrder manageOrder;
     private DeliveryProcessOrder deliveryProcessOrder;
 
@@ -22,7 +22,15 @@ public class GetOrderImplementation implements GetOrder {
         this.deliveryProcessOrder = deliveryProcessOrder;
     }
 
+    public void acceptOrder(String methodGetOrder) {
+        if (methodGetOrder.equals("Mobile")) {
+            System.out.println("The order was accepted by phone");
+        } else if (methodGetOrder.equals("Internet")) {
+            System.out.println("The order was accepted over the Internet");
+        }
+    }
 
+    @Override
     public void createOrder() {
         if (validator.validateMethodGetOrder(methodOrderGet)) {
             acceptOrder(methodOrderGet);
@@ -34,12 +42,4 @@ public class GetOrderImplementation implements GetOrder {
         }
     }
 
-    @Override
-    public void acceptOrder(String methodGetOrder) {
-        if (methodGetOrder.equals("Mobile")) {
-            System.out.println("The order was accepted by phone");
-        } else if (methodGetOrder.equals("Internet")) {
-            System.out.println("The order was accepted over the Internet");
-        }
-    }
 }

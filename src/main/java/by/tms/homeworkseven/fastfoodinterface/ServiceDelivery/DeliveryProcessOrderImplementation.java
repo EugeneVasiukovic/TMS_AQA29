@@ -1,6 +1,6 @@
-package by.tms.homeworkseven.fast_food_interface.ServiceDelivery;
+package by.tms.homeworkseven.fastfoodinterface.ServiceDelivery;
 
-import by.tms.homeworkseven.fast_food_interface.DeliveryProcessOrder;
+import by.tms.homeworkseven.fastfoodinterface.DeliveryProcessOrder;
 
 public class DeliveryProcessOrderImplementation implements DeliveryProcessOrder {
     @Override
