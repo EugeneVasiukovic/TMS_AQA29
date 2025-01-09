@@ -9,16 +9,14 @@ import by.tms.homeworkseven.fastfoodinterface.SaveOrder;
 public class GetOrderImplementation implements GetOrder {
 
     private String methodOrderGet;
-    private ValidatorGetOrder validator;
-    private SaveOrder orderToDataBase;
-    private ManageOrder manageOrder;
     private DeliveryProcessOrder deliveryProcessOrder;
+
+    SaveOrder  orderToDataBase = new SaveDataBaseImplementation();
+    ManageOrder manageOrder = new ManageOrderImplementation();
+    ValidatorGetOrder validator = new ValidatorGetOrder();
 
     public GetOrderImplementation(String methodOrderGet, DeliveryProcessOrder deliveryProcessOrder) {
         this.methodOrderGet = methodOrderGet;
-        this.validator = new ValidatorGetOrder();
-        this.orderToDataBase = new SaveDataBaseImplementation();
-        this.manageOrder = new ManageOrderImplementation();
         this.deliveryProcessOrder = deliveryProcessOrder;
     }
 
