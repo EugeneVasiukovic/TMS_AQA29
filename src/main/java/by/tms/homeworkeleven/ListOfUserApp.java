@@ -20,15 +20,18 @@ public class ListOfUserApp {
         listOfUser.add(new User("Robert Thomas", 33));
         listOfUser.add(new User("Sophia Martinez", 26));
 
-        for (User i: listOfUser){
+        System.out.println("User name: ");
+        for (User i : listOfUser) {
             System.out.println(i.getName());
         }
 
         List<User> sortUserByAge = new ArrayList<>(listOfUser);
         sortUserByAge.sort(new UserComparator());
-        System.out.println(sortUserByAge);
 
-
+        System.out.println("Sorting user by age: ");
+        for (User i : sortUserByAge) {
+            System.out.println(i);
+        }
 
 
     }
