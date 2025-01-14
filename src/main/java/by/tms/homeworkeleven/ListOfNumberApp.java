@@ -12,7 +12,7 @@ public class ListOfNumberApp {
         for (Integer num : listOfNumber) {
             set.put(num, set.getOrDefault(num, 0) + 1);
         }
-        System.out.println("Unique numbers and the number of their repetitions" + set);
+        System.out.println("Unique numbers and the number of their repetitions: \n" + set);
 
 
     }
